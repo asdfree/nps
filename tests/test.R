@@ -6,7 +6,7 @@ nps_cat <-
 	get_catalog( "nps" ,
 		output_dir = file.path( getwd() ) )
 
-# 2015 only
+# 2015 only 
 nps_cat <- subset( nps_cat , year == 2015 )
 # download the microdata to your local computer
 stopifnot( nrow( nps_cat ) > 0 )
