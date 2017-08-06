@@ -21,8 +21,8 @@ nps_df <-
 nps_design <- 
 	svrepdesign( 
 		data = nps_df , 
-		repweights = "pswgt[0-9]" , 
-		weights = ~ pswgt , 
+		repweights = "pstotwgt[0-9]" , 
+		weights = ~ pstotwgt , 
 		type = "Fay" , 
 		rho = 0.29986 , 
 		mse = TRUE
@@ -33,7 +33,7 @@ nps_design <-
 		
 		age_category =
 			factor( agec , levels = 2:5 , labels =
-			c( "60-64" , "65-74" , "75-84" , "85+" ) )
+			c( "60-64" , "65-74" , "75-84" , "85+" ) ) ,
 		
 		gender = factor( gender , labels = c( "male" , "female" ) ) ,
 		
