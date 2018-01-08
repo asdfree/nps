@@ -11,7 +11,7 @@ nps_cat <-
 # 2015 only 
 nps_cat <- subset( nps_cat , year == 2015 )
 # download the microdata to your local computer
-lodown( "nps" , nps_cat )
+
 
 library(survey)
 
